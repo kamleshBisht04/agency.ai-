@@ -1,5 +1,6 @@
 import { useState } from "react";
 import assets from "../../assets/assets";
+import ThemeToggleBtn from "./ThemeToggleBtn";
 
 const navItems = [
   { id: 1, title: "Home", value: "#" },
@@ -12,7 +13,7 @@ const Navbar = ({ theme, setTheme }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div className="flex justify-between items-center px-4 sm:px-12 lg:px-24 xl:px-40 py-4 sticky z-20 backdrop-blur-xl font-medium bg-white/50 dark:bg-gray-900/70">
+    <div className="flex justify-between items-center px-4 sm:px-12 lg:px-24 xl:px-40 py-4 sticky z-20 backdrop-blur-xl font-medium bg-white/50 dark:bg-gray-900/100">
       <img
         src={theme === "dark" ? assets.logo_dark : assets.logo}
         className="w-32 sm:w-40"
@@ -44,6 +45,8 @@ const Navbar = ({ theme, setTheme }) => {
       </div>
 
       <div className="flex item-center gap-2 sm:gap-4">
+        <ThemeToggleBtn theme={theme} setTheme={setTheme} />
+
         <img
           src={theme === "dark" ? assets.menu_icon_dark : assets.menu_icon}
           alt="menu icon"
