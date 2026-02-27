@@ -13,7 +13,7 @@ const Navbar = ({ theme, setTheme }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div className="flex justify-between items-center px-4 sm:px-12 lg:px-24 xl:px-40 py-4 sticky z-20 backdrop-blur-xl font-medium bg-white/50 dark:bg-gray-900/100">
+    <nav className="flex justify-between items-center px-4 sm:px-12 lg:px-24 xl:px-40 py-4 sticky z-20 backdrop-blur-xl font-medium bg-white/50 dark:bg-gray-900/100">
       <img
         src={theme === "dark" ? assets.logo_dark : assets.logo}
         className="w-32 sm:w-40"
@@ -60,7 +60,7 @@ const Navbar = ({ theme, setTheme }) => {
           Connect <img src={assets.arrow_icon} width={14} alt="contact section" />
         </a>
       </div>
-    </div>
+    </nav>
   );
 };
 
