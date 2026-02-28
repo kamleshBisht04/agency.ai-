@@ -1,5 +1,5 @@
-import Title from "./Title";
 import assets from "../../assets/assets";
+import Title from "../Title/Title";
 import ServiceCard from "./ServiceCard";
 
 const Service = () => {
