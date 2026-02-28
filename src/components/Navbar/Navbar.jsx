@@ -4,9 +4,9 @@ import ThemeToggleBtn from "./ThemeToggleBtn";
 
 const navItems = [
   { id: 1, title: "Home", value: "#" },
-  { id: 1, title: "Service", value: "#servic" },
-  { id: 1, title: "Our Work", value: "#our-work" },
-  { id: 1, title: "Contact Us", value: "#contact-us" },
+  { id: 2, title: "Service", value: "#services" },
+  { id: 3, title: "Our Work", value: "#our-work" },
+  { id: 4, title: "Contact Us", value: "#contact-us" },
 ];
 
 const Navbar = ({ theme, setTheme }) => {

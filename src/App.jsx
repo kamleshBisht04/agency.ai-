@@ -2,6 +2,8 @@ import { useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import TrustedBy from "./components/TrustedBy/TrustedBy";
+import Service from "./components/Service/Service";
+import ServiceCard from "./components/Service/ServiceCard";
 
 const App = () => {
   const [theme, setTheme] = useState(
@@ -12,7 +14,8 @@ const App = () => {
     <div className="dark:bg-black relative">
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero />
-      <TrustedBy/>
+      <TrustedBy />
+      <Service />
     </div>
   );
 };
