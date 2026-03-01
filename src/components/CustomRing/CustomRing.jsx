@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const CustomeRing = () => {
+const CustomRing = () => {
   const dotRef = useRef(null);
   const outlineRef = useRef(null);
 
@@ -46,4 +46,4 @@ const CustomeRing = () => {
   );
 };
 
-export default CustomeRing;
+export default CustomRing;
