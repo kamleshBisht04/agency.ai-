@@ -1,32 +1,11 @@
 import assets from "../../assets/assets";
 import Title from "../Title/Title";
 import ServiceCard from "./ServiceCard";
+import { serviceData } from "../constant/constant";
 import { motion } from "motion/react";
 
 const Service = () => {
-  const serviceData = [
-    {
-      title: "Advertising",
-      description: "We turn bold ideas into powerful digital solutions that connect, engage...",
-      icon: assets.ads_icon,
-    },
-    {
-      title: "Content marketing",
-      description: "We help you execute your plan and deliver results..",
-      icon: assets.marketing_icon,
-    },
-    {
-      title: "Content writing",
-      description: "We help you create a marketing strategy that drives results.",
-      icon: assets.content_icon,
-    },
-    {
-      title: "Social media",
-      description:
-        "We help you build a strong social media presence and engage with your audience.",
-      icon: assets.social_icon,
-    },
-  ];
+ 
   return (
     <motion.div
       initial="hidden"
