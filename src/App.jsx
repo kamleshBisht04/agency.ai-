@@ -8,6 +8,7 @@ import Teams from "./components/Teams/Teams";
 import ContactUs from "./components/ContactUs/ContactUs";
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer/Footer";
+import CustomeRing from "./components/CustomeRing/CustomeRing";
 
 const App = () => {
   const [theme, setTheme] = useState(
@@ -16,6 +17,7 @@ const App = () => {
 
   return (
     <div className="dark:bg-black relative">
+      <CustomeRing />
       <Toaster />
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero />
